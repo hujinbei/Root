@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+
+<body class="impress-not-supported">
+
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+
+<div id="impress">
+
+   
+    <div id="bored" class="step slide p5" data-x="-1000" data-y="-1500">
+
+        <q style="text-align: center; color: green;" ><br><br><br><strong>第十七周工作报告</strong></q>
+    </div>
+
+    <div class="step slide p4" data-x="0" data-y="-1500">
+        <q style="text-align: center"> <strong>一、本周工作简介</strong> </q>
+        <br>
+        <br>       
+        <h1 style="text-align: center; "><strong>学会如何安装和使用express</strong></h1>       
+    </div>
+
+
+    <div class="step slide p3" data-x="1000" data-y="-1500">
+        <h1> 如何安装expres</h1><br>
+        <h2>第一步：安装express</h2><br>
+        <p>1.打开终端（cmd），在终端输入命令 “ $ mkdir express”<br>	——创建一个名为“expres”的新文件夹用于存放安装express产生的文件</p><br>
+        <p>2.新建文件夹后输入命令 “$ sudo npm install -g express”     <br>	——安装express的命令</p><br>
+   		<p><b>安装过程如下：</b></p>
+        <img src="./img/express1.png">
+    </div>
+
+    <div class="step slide p2" data-x="2000" data-y="-1500">
+        <h1>express安装配置</h1><br>
+        <h2>第二步：配置express的运行环境</h2>
+        <p>3.输入配置express的命令 "￼$ npm install express-generator -g "</p>
+        <p><b>配置过程中出现一个错误如下：</b></p>
+        <img src="./img/express2.png">
+   
+    </div>
+
+    <div class="step slide p3" data-x="3000" data-y="-1500">
+
+        <!-- <q><strong>二、摄氏度换算华氏度</strong></q> -->
+        <br><br><h1> 错误：</h1>
+        <img src="./img/express3.png">
+
+     </div>
+
+     <div class="step slide p3" data-x="4000" data-y="-1500">
+        <h1>解决过程：</h1>
+        <p>经过上网查找相关错误资料之后，发现是mac系统下用户权限无法进行全局安装配置，所以需要赋予管理员权限运行</p><br>
+     	<p>所以更换为 “ $ sudo -s npm install express-gen ” 命令执行</p><br>
+     	 <p><b>安装成功！</b></p><br>
+     	 <img src="./img/express5.png">
+     	 <p>注：在命令下方出现安装的路径以及版本信息即表示安装成功</p>
+    </div>
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try" style="font-size: 20px">第三步：终端输入"$ express"命令</span>
+        <br><br>
+        <p>4. 出现"destination is not empty,continue?[y/N]"的提示时，只需输入"y"后回车，表示同意继续安装<!-- <sup>*</sup> --></p>
+        <!-- <span class="footnote" ><p style="text-align: right;"> <sup>*</sup>减少代码堆积</p></span> -->
+        <img src="./img/express4.png"> <br>
+	</div>
+
+ 
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p><strong>安装完成后，</strong> <br/>
+         尝试运行express，但出现错误<!-- <a href="http://prezi.com">prezi.com </a>--> <br/>
+         <p>错误如下所示：</p>
+         <img src="./img/express6.png"> <br>
+
+         </p>
+    </div>
+
+    <div id="big" class="step" data-x="3500" data-y="2500" data-rotate="180" data-scale="6">
+        
+        <img src="./img/express7.png"> <br>
+    </div>
+
+ 
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="3">
+      <p style="font-size: 30px">仔细查看上一步命令的代码提示发现还需输入：<br>“ cd . && npm install ” <!-- <span class="thoughts">thoughts</span>--></p>
+      <p style="font-size: 30px">为expres安装dependencies；</p> 
+         <img src="./img/express8.png"><br>
+    </div>
+
+
+    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+        <p>安装成功后，<b class="rotating">运行express</b>输入<b class="scaling">"npm start"</b>命令,<br
+        	>开始运行express:</p>
+        <img src="./img/express11.png"><br>
+    </div>
+
+    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+        <p style="">运行后打开浏览器，进入 <b>localhost：3000</b> 页面，该地址为服务器默认的登入地址； <!-- <b class="imagination">imagination</b> --></p>
+        <img src="./img/express9.png"><br>
+    </div>
+
+    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+        <p>want to know more?</p>
+        <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
+    </div>
+
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p>one more thing...</p>
+    </div>
+
+
+    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
+        <span class="footnote">* beat that, prezi ;)</span>
+    </div>
+
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+
+</body>
+</html>
+
