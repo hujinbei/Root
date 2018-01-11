@@ -47,17 +47,17 @@ greeter-show-manuallogin=true
 all-guest=false
 
 ```
-![](../root1.png)
+![](/root1.png)
 
 # 更改windows中root权限
 
 * 首先打开"开始"，在底部输入“cmd”，单击右键选择“以管理员身份运行（A）”，打开后便是最高权限运行；
-![](../3.png)
+![](/3.png)
 
-** 最高权限运行（访问系统文件）**
+* 最高权限运行（访问系统文件）
 
-![](../2.png)
+![](/2.png)
 
-** 普通权限运行（访问用户文件）**
+* 普通权限运行（访问用户文件
 
-![](/Users/huhuhu/Desktop/sublime文件/权限更改/4.png)
+![](/4.png)
